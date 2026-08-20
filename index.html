@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="硬件工程师个人作品集" />
+    <title>硬件工程师作品集</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top">刘欢 / 硬件工程师</a>
+      <nav aria-label="页面导航">
+        <a href="#projects">项目</a>
+        <a href="#capabilities">能力</a>
+        <a href="#process">方法</a>
+        <a href="#contact">联系</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">2026 CAMPUS RECRUITMENT</p>
+          <h1 id="hero-title">硬件工程师<br />作品集</h1>
+          <p class="hero-copy">专注嵌入式系统的原理图与 PCB 设计，覆盖通信接口、模拟采集与复杂 SoC 板级硬件。</p>
+          <p class="hero-note">以下项目真实区分设计、打板与验证状态，不以未经验证的数据作为结论。</p>
+        </div>
+        <div class="hero-meta">
+          <span>嵌入式硬件</span>
+          <span>原理图 / PCB</span>
+          <span>个人项目</span>
+        </div>
+      </section>
+
+      <section class="intro section-shell" aria-labelledby="intro-title">
+        <div>
+          <p class="section-label">01 / PROFILE</p>
+          <h2 id="intro-title">从需求拆解到可制造的板级设计</h2>
+        </div>
+        <p class="lead">围绕实际接口、电源、保护与布局约束完成原理图和 PCB 设计。作品集中保留设计依据、工程交付物与待验证项，让设计能力和当前进度都清晰可见。</p>
+      </section>
+
+      <section id="projects" class="projects section-shell" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">02 / SELECTED WORK</p>
+            <h2 id="projects-title">代表项目</h2>
+          </div>
+          <p>以 ESP32-S3 打板项目为主案例，通信、模拟采集和 SoC 板级设计共同构成硬件能力边界。</p>
+        </div>
+
+        <article class="project project-featured" id="esp32">
+          <div class="project-image image-esp32-board"><img src="assets/esp32-board.png" alt="ESP32-S3 项目 PCB 设计图" /></div>
+          <div class="project-content">
+            <div class="project-topline"><p class="project-index">01</p><span class="status status-built">已打板</span></div>
+            <h3>ESP32-S3 板级硬件设计</h3>
+            <p class="project-summary">以 ESP32-S3 为核心完成嵌入式控制板的原理图和 PCB 设计，并形成实物板作为后续 Bring-up 与功能验证基础。</p>
+            <dl class="project-facts">
+              <div><dt>个人职责</dt><dd>独立完成原理图与 PCB 设计</dd></div>
+              <div><dt>工程交付物</dt><dd>原理图、PCB、已打板实物</dd></div>
+              <div><dt>设计关注点</dt><dd>电源、下载复位、接口与布局</dd></div>
+              <div><dt>下一步</dt><dd>上电、下载、串口与外设基础验证</dd></div>
+            </dl>
+          </div>
+        </article>
+
+        <div class="project-detail-grid">
+          <article class="detail-card">
+            <img src="assets/esp32-photo.jpg" alt="ESP32-S3 项目实物照片" />
+            <div class="detail-card-body"><p class="caption-label">HARDWARE EVIDENCE</p><h3>实物板与工程文件</h3><p>以打板实物、PCB 层叠图和关键模块截图共同证明工程交付完成度。</p></div>
+          </article>
+          <article class="detail-card">
+            <img src="assets/esp32-schematic.png" alt="ESP32-S3 项目原理图" />
+            <div class="detail-card-body"><p class="caption-label">DESIGN REVIEW</p><h3>关键设计审视</h3><p>在原理图中说明电源树、下载复位与外设接口；在 PCB 中审视分区、回流与去耦摆放。</p></div>
+          </article>
+        </div>
+
+        <div class="project-list">
+          <article class="project project-row" id="can485">
+            <div class="project-row-image"><img src="assets/can485-schematic.png" alt="CAN 与 RS485 接口原理图" /></div>
+            <div class="project-content">
+              <div class="project-topline"><p class="project-index">02</p><span class="status status-design">设计完成，待验证</span></div>
+              <h3>STM32 CAN / RS485 通信板</h3>
+              <p class="project-summary">围绕 CAN 与 RS485 通信接口完成收发器、端接、接口连接与 ESD/浪涌保护相关硬件设计。</p>
+              <dl class="project-facts"><div><dt>个人职责</dt><dd>独立完成原理图与 PCB 设计</dd></div><div><dt>关键设计决策</dt><dd>端接匹配、TVS 保护、接口定义</dd></div><div><dt>下一步</dt><dd>上电、收发与异常接口测试</dd></div></dl>
+            </div>
+          </article>
+
+          <article class="project project-row" id="pt100">
+            <div class="project-row-image"><img src="assets/pt100-schematic.png" alt="PT100 温度测量系统原理图" /></div>
+            <div class="project-content">
+              <div class="project-topline"><p class="project-index">03</p><span class="status status-design">设计完成，待验证</span></div>
+              <h3>PT100 温度测量系统</h3>
+              <p class="project-summary">面向温度传感应用完成测量系统原理图和 PCB 设计，重点梳理模拟采集链路与 MCU 显示、下载及按键模块。</p>
+              <dl class="project-facts"><div><dt>个人职责</dt><dd>独立完成原理图与 PCB 设计</dd></div><div><dt>设计关注点</dt><dd>模拟前端、滤波、采样与地划分</dd></div><div><dt>下一步</dt><dd>精度、重复性与温漂验证</dd></div></dl>
+            </div>
+          </article>
+
+          <article class="project project-row" id="rk3568">
+            <div class="project-row-image"><img src="assets/rk3568-pcb.jpg" alt="RK3568 项目 PCB 设计图" /></div>
+            <div class="project-content">
+              <div class="project-topline"><p class="project-index">04</p><span class="status status-pcb">PCB 设计完成，待打板</span></div>
+              <h3>RK3568 SoC 板级设计</h3>
+              <p class="project-summary">以复杂 SoC 平台为载体完成 PCB 设计，作为高速接口、供电网络、BGA 扇出与高密度布局布线能力的设计案例。</p>
+              <dl class="project-facts"><div><dt>个人职责</dt><dd>完成 PCB 设计工作</dd></div><div><dt>设计关注点</dt><dd>供电、DDR/高速接口、BGA 布局</dd></div><div><dt>下一步</dt><dd>打板、上电时序与启动验证</dd></div></dl>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="capabilities" class="capabilities" aria-labelledby="capabilities-title">
+        <div class="section-shell">
+          <div class="section-heading"><div><p class="section-label">03 / CAPABILITIES</p><h2 id="capabilities-title">可由项目证明的能力</h2></div></div>
+          <div class="capability-grid">
+            <article><span>01</span><h3>原理图设计</h3><p>按功能划分模块，明确电源、下载调试、MCU/SoC 与外设接口连接关系。</p></article>
+            <article><span>02</span><h3>电源与保护</h3><p>在接口、电源入口与通信链路中考虑保护、滤波、端接和基础可靠性措施。</p></article>
+            <article><span>03</span><h3>模拟与通信</h3><p>覆盖 PT100 测量链路、CAN、RS485 及嵌入式控制相关接口设计。</p></article>
+            <article><span>04</span><h3>PCB 布局布线</h3><p>处理功能分区、去耦、回流路径、接口布置及高密度板级互连约束。</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="process section-shell" aria-labelledby="process-title">
+        <div class="section-heading"><div><p class="section-label">04 / WORKFLOW</p><h2 id="process-title">硬件设计方法</h2></div><p>每个阶段留下可审阅的交付物，降低设计和验证阶段的不确定性。</p></div>
+        <ol class="process-steps">
+          <li><span>01</span><strong>需求拆解</strong><p>梳理功能、接口、电源和空间约束。</p></li>
+          <li><span>02</span><strong>器件与原理图</strong><p>完成模块选型、连接关系与设计审查。</p></li>
+          <li><span>03</span><strong>PCB 实现</strong><p>处理分区、布局、布线与制造约束。</p></li>
+          <li><span>04</span><strong>检查与交付</strong><p>执行 ERC、DRC 并输出生产文件。</p></li>
+          <li><span>05</span><strong>打板与 Bring-up</strong><p>按计划完成上电、下载、接口与功能验证。</p></li>
+        </ol>
+      </section>
+
+      <section class="supplement section-shell" aria-labelledby="supplement-title">
+        <div class="section-heading"><div><p class="section-label">05 / ADDITIONAL WORK</p><h2 id="supplement-title">竞赛与补充项目</h2></div></div>
+        <div class="supplement-grid">
+          <article><img src="assets/oscilloscope.jpg" alt="简易示波器项目照片" /><h3>简易示波器</h3><p>补充展示采样、显示与嵌入式系统集成经历。</p></article>
+          <article><img src="assets/competition-embedded.jpg" alt="嵌入式芯片与系统设计竞赛照片" /><h3>嵌入式芯片与系统设计竞赛</h3><p>竞赛项目与团队协作经历。</p></article>
+          <article><img src="assets/competition-electronic.jpg" alt="全国大学生电子设计竞赛照片" /><h3>全国大学生电子设计竞赛</h3><p>电子系统方案设计与现场交付经验。</p></article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact" aria-labelledby="contact-title">
+        <div class="section-shell contact-inner">
+          <div><p class="section-label">06 / CONTACT</p><h2 id="contact-title">期待加入硬件研发团队</h2></div>
+          <div class="contact-links">
+            <a href="mailto:1768138189@qq.com">1768138189@qq.com</a>
+            <a href="https://github.com/aaa0098" target="_blank" rel="noreferrer">github.com/aaa0098</a>
+            <a href="liuhuan-resume.pdf" download>下载个人简历</a>
+            <a href="hardware-engineer-portfolio.pdf" download>下载 PDF 作品集</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer><span>刘欢 / HARDWARE PORTFOLIO</span><span>2026</span></footer>
+  </body>
+</html>
